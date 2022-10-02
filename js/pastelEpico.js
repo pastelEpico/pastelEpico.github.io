@@ -328,7 +328,7 @@ function revisarVidas() {
         document.getElementById("1").setAttribute('src', './img/pastelEpico-03.png')
         //sectionMensajes.innerHTML= img class="pastelEpico" src="./img/pastelEpico-03.png"
     } else {
-        crearMensajeFinal('Lo siento, perdiste Pastel Epico esta Triste😭😢😱')
+        crearMensajeFinal('Lo siento, perdiste Pastel Epico esta Enojado😠😡🤬')
         document.getElementById("1").setAttribute('src', './img/pastelEpico-04.png')
         //sectionMensajes.innerHTML=img class="pastelEpico" src="./img/pastelEpico-04.png"
     }
