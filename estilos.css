@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+
+.pastelEpico{
+  width: 180px;
+  height: 180px;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #5CE1E6;
+  width: 70%;
+  margin: 0 auto;
+}
+
+#seleccionar-mascota {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo {
+  color: #443D3D;
+  font-size: 96px;
+  font-family: 'Nabla', cursive;
+}
+
+.subtitulo {
+  color: #443D3D;
+  font-size: 20px;
+}
+
+.tarjetas, .tarjetas-ataques {
+  display: flex;
+  gap: 10px;
+}
+
+.tarjeta-de-mokepon {
+  width: 180px;
+  height: 100px;
+  background: #5CE1E6;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #443D3D;
+}
+
+.tarjeta-de-mokepon img {
+  width: 80px;
+}
+
+#boton-mascota {
+  width: 180px;
+  height: 40px;
+  border-radius: 20px;
+  background: #FF7F3F;
+  border: 2px solid white;
+  color: #443D3D;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 30px;
+}
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  background-color: #FBDF07;
+}
+
+#seleccionar-ataque {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.boton-de-ataque {
+  background-color: #FF7F3F;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border-color: #443D3D;
+  width: 80px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+#mensajes {
+  width: 280px;
+  background: #EEEEEE;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.b img {
+  width: 100px;
+  height: 100px
+}
+
+#boton-reiniciar {
+  border: none;
+  color: #5CE1E6;
+  font-family: 'Poppins', sans-serif;
+}
+
+.ataques {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  color: #443D3D;
+}
+
+#vidas-jugador, #vidas-enemigo {
+  font-size: 32px;
+  margin-bottom: 0;
+}
+
+.ataques-jugador, .ataques-enemigo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#ver-mapa {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#ver-mapa button {
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+  background: transparent;
+  border: 2px solid #443D3D;
+  color: #443D3D;
+  font-family: 'Poppins', sans-serif;
+  margin: 10px 0;
+}
+
+@media (max-width: 560px) {
+  .tarjetas, .tarjetas-ataques {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 300px) {
+  #ver-mapa div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}

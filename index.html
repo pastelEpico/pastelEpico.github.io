@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Pastel Epico</title>
+        <link rel="stylesheet" href="./estilos.css"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <section id="seleccionar-mascota">
+            <h1 class="titulo">Pastel Epico</h1> 
+            <img class="pastelEpico" src="./img/pastelEpico-01.png">
+            <h2 class="subtitulo">OJO 👀 Gana la batalla contra una Fruta Testaruda, para que Pastel Epico sea aceptado en el club de comida chatarra!!! Selecciona al mejor luchador:</h2>
+            
+            <div id='contenedorTarjetas' class="tarjetas">
+                
+            </div>
+
+            <button id="boton-mascota">Al Combate!👌🤙😁</button>
+        </section>
+
+        <section id="ver-mapa">
+            <h2 class="subtitulo">⚡🚨⚡Choca a una Fruta Testaruda para empezar la lucha💪 </h2> 
+            
+            <canvas id="mapa"></canvas>
+            <button
+                ontouchend="detenerMovimiento()"  
+                onmouseup="detenerMovimiento()" 
+                onmousedown="moverArriba()"
+                ontouchstart="moverArriba()" 
+            >Arriba</button>
+            <div>
+                <button 
+                    onmouseup="detenerMovimiento()"
+                    ontouchend="detenerMovimiento()" 
+                    onmousedown="moverIzquierda()"
+                    ontouchstart="moverIzquierda()"
+                >Izquierda</button>
+                <button 
+                    onmouseup="detenerMovimiento()"
+                    ontouchend="detenerMovimiento()" 
+                    onmousedown="moverAbajo()"
+                    ontouchstart="moverAbajo()"
+                >Abajo</button>
+                <button 
+                    onmouseup="detenerMovimiento()"
+                    ontouchend="detenerMovimiento()" 
+                    onmousedown="moverDerecha()"
+                    ontouchstart="moverDerecha()"
+                >Derecha</button>
+            </div>
+        </section>
+
+        <section id="seleccionar-ataque">
+            <h1 class="titulo">Pastel Epico</h1>
+
+            <h2 class="subtitulo">🤪El combate es jugando Piedra, Papel o Tijera, gana el que tenga mas victorias de 5, asi que Elige tus 5 ataques:</h2>
+
+            <div id='contenedorAtaques' class="tarjetas-ataques">
+
+            </div>
+
+            <div id="mensajes">
+                <div class="b">
+                    <img src="./img/pastelEpico-02.png" alt="a" id="1">
+                </div>
+                <p id="resultado">Mucha suerte Pastel Epico confia en ti</p>
+                
+                <section id="reiniciar">
+                    <button id="boton-reiniciar">Luchar de Nuevo</button>
+                </section>
+            </div>
+
+            <div class="ataques">
+                <div class="ataques-jugador">
+                    <p id="vidas-jugador">0</p>
+                    <p id="mascota-jugador"></p>
+                    <div id="ataques-del-jugador"></div>
+                </div>
+                <div class="ataques-enemigo">   
+                    <p id="vidas-enemigo">0</p>
+                    <p id="mascota-enemigo"></p>
+                    <div id="ataques-del-enemigo"></div>
+                </div>
+            </div>
+        </section>
+        <script src="./js/pastelEpico.js"></script>
+    </body>
+</html>
+
+
